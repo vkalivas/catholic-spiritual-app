@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  font-family: 'Nunito', sans-serif; /* Modern font */
+  color: #fff;
+  background-color: #f5f5f5;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url('/public/background.png'); /* Use the name of your image */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 10px 0 30px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.button {
+  background-color: #007bff;
+  color: white;
+  font-size: 1.2rem;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.divider {
+  width: 80%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 20px auto;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+  .subtitle {
+    font-size: 1.2rem;
+  }
+  .button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}

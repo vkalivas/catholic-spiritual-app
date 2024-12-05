@@ -4,7 +4,7 @@ import { catholicPractices } from '../data/catholicPractices';
 export const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
-  const [guidedJourney, setGuidedJourney] = useState(catholicPractices.purgative);
+  const [guidedJourney] = useState(catholicPractices.purgative);
   const [customRoutines, setCustomRoutines] = useState([]);
 
   const addCustomPractice = (practice) => {
